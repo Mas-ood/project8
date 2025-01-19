@@ -2,100 +2,469 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
+    <div>
+    <div className="bg-white w-auto h-full text-black text-bold">
+        <div className=" bg-slate-400 h-10 w-auto text-lg">
+        <div>
         <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+      
+      src="/Images/Logo.png"
+      alt="Logo" 
+      width={166}
+      height={2}
+      />
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
+        </div>
+        <div className=" bg-slate-200 w-auto h-12 text-xl  flex gap-8">
+        <div>
+          <header>
+          <ul className="flex gap-5">
+      <li className="text-2xl">
+        <a href="/">Home</a>
+      </li>
+      <li className="text-2xl">
+        <a href="/about">About</a>
+      </li>
+      <li className="text-2xl">
+        <a href="/contact">Contact Us</a>
+      </li>
+      <li className="text-2xl">
+        <a href="/pages">Pages</a>
+      </li>
+      <li className="text-2xl">
+        <a href="/product">Product</a>
+      </li>
+      <li className="text-2xl">
+        <a href="/FAQ">FAQ</a>
+      </li>
+     <button className="bg-white text-black">
+      <Image
+      
+      src="/Images/cart.png"
+      alt="Cart" 
+      width={20}
+      height={1}
+      />
+      <a href="/cart">CART</a>
+      </button>
+     </ul>         </header>
+        </div>
+      </div>
+      <br/>
+      <div className="bg-white text-black">
+        
+      
+            <div className="flex h-2/5 w-full bg-slate-300 ">
+        <div className="flex flex-col flex-1 gap-4 justify-center px-4">
+        <h1 className="w-36 h-4 text-xl font-medium">Welcome To Chairy</h1>
+        <br/>
+        
+        <h1 className="justify-items-left text-6xl w-72 h-16"><b>Best Furniture Collection for your interior.</b></h1>
+        
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+      
+        <button className="text-white w-[217px] h-[66px] p-4 bg-cyan-700"><b>Shop Now</b> </button>
+        </div>
+        <div className="flex-1">
+          <div>
+          <Image 
+            src="/Images/Image1.png"
+            alt="Chair1" 
+            width={300}
+            height={3}
           />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+          </div>
+        </div>
     </div>
+     <br/>
+     <div style={{ display: "flex", gap: "20px", flexDirection: "row" }}>
+<div style={{ flex: 1, padding: "10px" }}>
+  <Image
+  src="/Images/Image2.1.png"
+  alt="Img1"
+  width={100}
+  height={100}
+  />
+</div>
+<div style={{ flex: 1, padding: "10px" }}>
+  <Image
+  src="/Images/Image2.2.png"
+  alt="Img2"
+  width={200}
+  height={100}
+  />
+</div>
+<div style={{ flex: 1, padding: "10px" }}>
+  <Image
+  src="/Images/Image2.3.png"
+  alt="Img3"
+  width={100}
+  height={100}
+  />
+</div>
+<div style={{ flex: 1, padding: "10px" }}>
+  <Image
+  src="/Images/Image2.4.png"
+  alt="Img4"
+  width={70}
+  height={100}
+  />
+</div>
+<div style={{ flex: 1, padding: "10px" }}>
+  <Image
+  src="/Images/Image2.5.png"
+  alt="Img5"
+  width={80}
+  height={100}
+  />
+</div>
+<div style={{ flex: 1, padding: "10px" }}>
+  <Image
+  src="/Images/Image2.6.png"
+  alt="Img6"
+  width={300}
+  height={100}
+  />
+</div>
+<div style={{ flex: 1, padding: "10px" }}>
+  <Image
+  src="/Images/Image2.7.png"
+  alt="Img7"
+  width={200}
+  height={100}
+  />
+</div>
+     </div>
+     <br/>
+     <div>
+  <h1 className="text-2xl font-bold text-center">Featured Products</h1>
+  <br/>
+  <div style={{ display: "flex", gap: "30px", flexDirection: "row" }}>
+<div style={{ flex: 1, padding: "20px" }}>
+  <Image
+  src="/Images/Image3.1.jpeg"
+  alt="Chair9"
+  width={300}
+  height={300}
+  />
+  <p className="font-medium">Library Stool Chair</p>
+  <p className="font-semibold">$20</p>
+</div>  
+<div style={{ flex: 1, padding: "20px" }}>
+  <Image
+  src="/Images/chair3.jpeg"
+  alt="Chair3"
+  width={200}
+  height={200}
+  />
+  <p className="font-medium">Library Stool Chair</p>
+  <p className="font-semibold">$20</p>
+</div>  
+<div style={{ flex: 1, padding: "20px" }}>
+  <Image
+  src="/Images/chair1.jpeg"
+  alt="Chair1"
+  width={300}
+  height={300}
+  />
+  <p className="font-medium">Library Stool Chair</p>
+  <p className="font-semibold">$20</p>
+</div>  
+<div style={{ flex: 1, padding: "20px" }}>
+  <Image
+  src="/Images/chair6.jpeg"
+  alt="Chair6"
+  width={200}
+  height={200}
+  />
+  <p className="font-medium">Library Stool Chair</p>
+  <p className="font-semibold">$20</p>
+</div>  
+ </div>
+ </div>
+    </div>
+    <br/>
+    <div>
+    <h1 className="text-2xl font-bold text-center">Featured Products</h1>
+     <br/>
+     <div style={{ display: "flex", gap: "30px", flexDirection: "row" }}>
+<div style={{ flex: 1, padding: "20px" }}>
+  <Image
+  src="/Images/chair2.jpeg"
+  alt="Chair2"
+  width={200}
+  height={200}
+  /><br/>
+  <p className="font-semibold text-lg">Wing Chair</p>
+     </div>
+     <div style={{ flex: 1, padding: "20px" }}>
+  <Image
+  src="/Images/chair7.jpeg"
+  alt="Chair7"
+  width={300}
+  height={300}
+  /><br/>
+  <p className="font-semibold text-lg">Wooden Chair</p>
+     </div>
+     <div style={{ flex: 1, padding: "20px" }}>
+  <Image
+  src="/Images/chair5.png"
+  alt="Chair5"
+  width={220}
+  height={200}
+  /><br/>
+  <p className="font-semibold text-lg">Desk Chair</p>
+     </div>
+    </div>
+    <br/>
+    <div>
+      <h1 className="text-center font-bold text-3xl">Explore New And Popluar Styles</h1>
+      </div>
+    <br/>
+    <div style={{ display: "flex", gap: "20px", flexDirection: "row" }}>
+<div style={{ flex: 1, padding: "20px" }}>
+  <Image
+  src="/Images/chair1.jpeg"
+  alt="Chair1"
+  width={300}
+  height={300}
+  /><br/>
+  </div>
+  <div style={{ flex: 1, padding: "20px" }}>
+  <Image
+  src="/Images/chair6.jpeg"
+  alt="Chair6"
+  width={230}
+  height={220}
+  /><br/>
+  </div>
+  <div style={{ flex: 1, padding: "20px" }}>
+  <Image
+  src="/Images/Image3.1.jpeg"
+  alt="Chair9"
+  width={330}
+  height={330}
+  /><br/>
+  </div>
+  <div style={{ flex: 1, padding: "20px" }}>
+  <Image
+  src="/Images/chair8.jpeg"
+  alt="Chair8"
+  width={200}
+  height={200}
+  /><br/>
+  </div>
+  <div style={{ flex: 1, padding: "20px" }}>
+  <Image
+  src="/Images/Image3.1.jpeg"
+  alt="Chair9"
+  width={300}
+  height={300}
+  /><br/>
+  </div>
+  </div>
+  <br/>
+  <div className="text-center font-bold text-3xl"><h1>Our Products</h1></div>
+  <br/>
+  <div style={{ display: "flex", gap: "20px", flexDirection: "row" }}>
+<div style={{ flex: 1, padding: "20px" }}>
+<Image
+  src="/Images/Image3.1.jpeg"
+  alt="Chair9"
+  width={300}
+  height={300}
+  />
+  <p>Library Stool Chair</p>
+  <p className="font-semibold text-lg">$20</p>
+  </div>
+  <div style={{ flex: 1, padding: "20px" }}>
+<Image
+  src="/Images/chair3.jpeg"
+  alt="Chair3"
+  width={220}
+  height={220}
+  />
+  <p>Library Stool Chair</p>
+  <p className="font-semibold text-lg">$20</p>
+  </div>
+  <div style={{ flex: 1, padding: "20px" }}>
+<Image
+  src="/Images/chair1.jpeg"
+  alt="Chair1"
+  width={280}
+  height={280}
+  />
+  <p>Library Stool Chair</p>
+  <p className="font-semibold text-lg">$20</p>
+  </div>
+  <div style={{ flex: 1, padding: "20px" }}>
+<Image
+  src="/Images/chair6.jpeg"
+  alt="Chair6"
+  width={200}
+  height={200}
+  />
+  <p>Library Stool Chair</p>
+  <p className="font-semibold text-lg">$20</p>
+  </div>
+</div>
+<div style={{ display: "flex", gap: "20px", flexDirection: "row" }}>
+<div style={{ flex: 1, padding: "20px" }}>
+<Image
+  src="/Images/chair2.jpeg"
+  alt="Chair2"
+  width={200}
+  height={200}
+  /><br/>
+  <p>Library Stool Chair</p>
+  <p className="font-semibold text-lg">$20</p>
+  </div>
+  <div style={{ flex: 1, padding: "20px" }}>
+<Image
+  src="/Images/chair8.jpeg"
+  alt="Chair8"
+  width={220}
+  height={220}
+  /><br/>
+  <p>Library Stool Chair</p>
+  <p className="font-semibold text-lg">$20</p>
+  </div>
+  <div style={{ flex: 1, padding: "20px" }}>
+<Image
+  src="/Images/chair4.jpeg"
+  alt="Chair4"
+  width={200}
+  height={200}
+  /><br/>
+  <p>Library Stool Chair</p>
+  <p className="font-semibold text-lg">$20</p>
+  </div>
+  <div style={{ flex: 1, padding: "20px" }}>
+<Image
+  src="/Images/Image3.1.jpeg"
+  alt="Chair9"
+  width={300}
+  height={400}
+  /><br/>
+  <p>Library Stool Chair</p>
+  <p className="font-semibold text-lg">$20</p>
+  </div>
+</div>
+  </div>
+  </div>
+  <div>
+  <footer className="bg-slate-100 text-black">
+   <br/>
+   <div style={{ display: "flex", gap: "20px", flexDirection: "row" }}>
+   <div style={{ flex: 1, padding: "20px" }}>
+   <Image
+   src="/Images/Logo.png"
+   alt="Logo" 
+   width={166}
+   height={2}
+   /><br/>
+   <p>Vivamus tristique odio sit amet velit semper,</p><p>eu posuere turpis interdum.</p>
+   <Image
+   src="/Images/twitter.png"
+   alt="Twitter" 
+   width={16}
+   height={2}
+   /><br/>
+      <Image
+   src="/Images/instagram.png"
+   alt="Instagram" 
+   width={16}
+   height={2}
+   /><br/>   
+   <Image
+   src="/Images/pinterest.png"
+   alt="Pinterest" 
+   width={16}
+   height={2}
+   /><br/>   
+   <Image
+   src="/Images/youtube.png"
+   alt="Youtube" 
+   width={16}
+   height={2}
+   /><br/> 
+   <Image
+   src="/Images/facebook.png"
+   alt="Facebook" 
+   width={16}
+   height={2}
+   /><br/> 
+</div>
+<div style={{ flex: 1, padding: "20px" }}>
+  <p className="text-lg text-slate-500">Category</p>
+  <br/>
+  <p>Sofa</p>
+  <p>Armchair</p>
+  <p>Wing Chair</p>
+  <p>Desk Chair</p>
+  <p>Wooden Chair</p>
+  <p>Park Bench</p>
+</div>
+<div style={{ flex: 1, padding: "20px" }}>
+  <p className="text-lg text-slate-500">Support</p>
+  <br/>
+  <p>Help and Support</p>
+  <p>Terms and Conditions</p>
+  <p>Privacy Policy</p>
+  <p>Help</p>
+</div>
+<div style={{ flex: 1, padding: "20px" }}>
+<p className="text-lg text-slate-500">Newsletter</p>
+<br/>
+  <form>
+  <p className="text-xl"><b>Email Address:-</b></p>
+    <input type="text" name="Email Address" size={40} maxLength={50}/>
+    <br/>
+    <button className="bg-cyan-800 w-32 h-14 text-white">Subscribe</button>
+  </form>
+  <br/>
+  <p className="text-slate-500">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+  Nullam tincidunt erat enim.</p>
+</div>
+</div>
+<br/>
+<div style={{ display: "flex", gap: "20px", flexDirection: "row" }}>
+<div style={{ flex: 1, padding: "20px" }}>
+  <p className="text-slate-500 text-lg">@ 2021 - Blogy - Designed & Develop by Zakirsoft</p>
+</div>
+<div style={{flex: 1, padding: "20px"}}>
+  <Image
+  src="/Images/paypal.png"
+  alt="Paypal"
+  width={90}
+  height={90}
+  />
+  <br/>
+  <Image
+  src="/Images/americanexpress.png"
+  alt="AE"
+  width={90}
+  height={90}
+  />
+  <br/>
+  <Image
+  src="/Images/visa.png"
+  alt="Visa"
+  width={90}
+  height={90}
+  />
+  </div> 
+</div>
+    </footer>
+    </div>
+  </div>
   );
 }
