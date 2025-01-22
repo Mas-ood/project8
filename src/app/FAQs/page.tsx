@@ -29,13 +29,10 @@ export default function FAQs() {
         <a href="/contact">Contact Us</a>
       </li>
       <li className="text-2xl">
-        <a href="/pages">Pages</a>
-      </li>
-      <li className="text-2xl">
         <a href="/product">Product</a>
       </li>
       <li className="text-2xl">
-        <a href="/FAQ">FAQ</a>
+        <a href="/FAQs">FAQs</a>
       </li>
       
      <button className="bg-white text-black">

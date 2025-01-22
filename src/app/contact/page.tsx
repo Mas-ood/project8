@@ -28,13 +28,10 @@ export default function ContactUs() {
         <a href="/contact">Contact Us</a>
       </li>
       <li>
-        <a href="/pages">Pages</a>
-      </li>
-      <li>
         <a href="/product">Product</a>
       </li>
       <li>
-        <a href="/FAQ">FAQ</a>
+        <a href="/FAQs">FAQs</a>
       </li>
      
      <button className="bg-white text-black">

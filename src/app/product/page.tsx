@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Product() {
   return (
@@ -29,13 +30,10 @@ export default function Product() {
         <a href="/contact">Contact Us</a>
       </li>
       <li className="text-2xl">
-        <a href="/pages">Pages</a>
-      </li>
-      <li className="text-2xl">
         <a href="/product">Product</a>
       </li>
       <li className="text-2xl">
-        <a href="/FAQ">FAQ</a>
+        <a href="/FAQs">FAQs</a>
       </li>
      <button className="bg-white text-black">
       <Image
@@ -62,18 +60,19 @@ export default function Product() {
         width={200}
         height={200}
         />
-        <h4 className="text-lg font-semibold">Library Stool Chair</h4>
-        <h6 className="font-semibold">$20</h6>
+        <Link href="/page1">
+        <h4 className="text-lg font-semibold">Vintage-Styled Chair</h4>
+        <h6 className="font-semibold">$20</h6></Link>
     </div>
     <div style={{ flex: 1, padding: "20px" }}>
         <Image
         src="/Images/chair3.jpeg"
         alt="Chair3"
-        width={200}
-        height={200}
-        />
-        <h4 className="text-lg font-semibold">Library Stool Chair</h4>
-        <h6 className="font-semibold">$20</h6>
+        width={150}
+        height={150}
+        /><Link href="/page2">
+        <h4 className="text-lg font-semibold">Beautiful Sofa</h4>
+        <h6 className="font-semibold">$20</h6></Link>
     </div>
     <div style={{ flex: 1, padding: "20px" }}>
         <Image
@@ -81,19 +80,19 @@ export default function Product() {
         alt="Chair1"
         width={200}
         height={200}
-        />
-        <h4 className="text-lg font-semibold">Library Stool Chair</h4>
-        <h6 className="font-semibold">$20</h6>
+        /><Link href="/page3">
+        <h4 className="text-lg font-semibold">Plastic Chair</h4>
+        <h6 className="font-semibold">$20</h6></Link>
     </div>
     <div style={{ flex: 1, padding: "20px" }}>
         <Image
         src="/Images/chair6.jpeg"
         alt="Chair"
-        width={200}
-        height={200}
-        />
-        <h4 className="text-lg font-semibold">Library Stool Chair</h4>
-        <h6 className="font-semibold">$20</h6>
+        width={150}
+        height={150}
+        /><Link href="/page4">
+        <h4 className="text-lg font-semibold">Elegant Sofa</h4>
+        <h6 className="font-semibold">$20</h6></Link>
     </div>
   </div>
   <br/>
@@ -104,39 +103,39 @@ export default function Product() {
         alt="Chair7"
         width={200}
         height={200}
-        />
-        <h4 className="text-lg font-semibold">Library Stool Chair</h4>
-        <h6 className="font-semibold">$20</h6>
+        /><Link href="/page5">
+        <h4 className="text-lg font-semibold">Wooden Chair</h4>
+        <h6 className="font-semibold">$20</h6></Link>
       </div>
       <div style={{ flex: 1, padding: "20px" }}>
         <Image
         src="/Images/chair8.jpeg"
         alt="Chair8"
-        width={200}
-        height={200}
-        />
-        <h4 className="text-lg font-semibold">Library Stool Chair</h4>
-        <h6 className="font-semibold">$20</h6>
+        width={150}
+        height={150}
+        /><Link href="/page6">
+        <h4 className="text-lg font-semibold">Unique-Designed Chair</h4>
+        <h6 className="font-semibold">$20</h6></Link>
       </div>
       <div style={{ flex: 1, padding: "20px" }}>
         <Image
         src="/Images/chair4.jpeg"
         alt="Chair4"
-        width={200}
-        height={200}
-        />
-        <h4 className="text-lg font-semibold">Library Stool Chair</h4>
-        <h6 className="font-semibold">$20</h6>
+        width={130}
+        height={130}
+        /><Link href="/page7">
+        <h4 className="text-lg font-semibold">Elegant Chair</h4>
+        <h6 className="font-semibold">$20</h6></Link>
       </div>
       <div style={{ flex: 1, padding: "20px" }}>
         <Image
-        src="/Images/Image3.1.jpeg"
-        alt="Chair9"
-        width={350}
-        height={350}
-        />
-        <h4 className="text-lg font-semibold">Library Stool Chair</h4>
-        <h6 className="font-semibold">$20</h6>
+        src="/Images/Image5.2.jpeg"
+        alt="Chair10"
+        width={160}
+        height={160}
+        /><Link href="/page8">
+        <h4 className="text-lg font-semibold">Modern Black Accent Chair</h4>
+        <h6 className="font-semibold">$20</h6></Link>
       </div>
   </div>
   <br/>
@@ -145,41 +144,41 @@ export default function Product() {
         <Image
         src="/Images/chair2.jpeg"
         alt="Chair2"
-        width={200}
-        height={200}
-        />
-        <h4 className="text-lg font-semibold">Library Stool Chair</h4>
-        <h6 className="font-semibold">$20</h6>
+        width={150}
+        height={150}
+        /><Link href="/page9">
+        <h4 className="text-lg font-semibold">Luxury Chair</h4>
+        <h6 className="font-semibold">$20</h6></Link>
       </div>
       <div style={{ flex: 1, padding: "20px" }}>
         <Image
-        src="/Images/chair3.jpeg"
-        alt="Chair3"
-        width={250}
-        height={250}
-        />
-        <h4 className="text-lg font-semibold">Library Stool Chair</h4>
-        <h6 className="font-semibold">$20</h6>
+        src="/Images/image5.3.jpeg"
+        alt="Chair11"
+        width={180}
+        height={180}
+        /><Link href="/page10">
+        <h4 className="text-lg font-semibold">Classic Wooden Chair</h4>
+        <h6 className="font-semibold">$20</h6></Link>
       </div>
       <div style={{ flex: 1, padding: "20px" }}>
         <Image
-        src="/Images/chair1.jpeg"
-        alt="Chair1"
+        src="/Images/image5.1.jpeg"
+        alt="Sofa1"
         width={300}
         height={300}
-        />
-        <h4 className="text-lg font-semibold">Library Stool Chair</h4>
-        <h6 className="font-semibold">$20</h6>
+        /><Link href="/page11">
+        <h4 className="text-lg font-semibold">Big Sofa</h4>
+        <h6 className="font-semibold">$20</h6></Link>
       </div>
       <div style={{ flex: 1, padding: "20px" }}>
         <Image
         src="/Images/chair5.png"
         alt="Chair5"
-        width={200}
-        height={200}
-        />
-        <h4 className="text-lg font-semibold">Library Stool Chair</h4>
-        <h6 className="font-semibold">$20</h6>
+        width={150}
+        height={150}
+        /><Link href="/page12">
+        <h4 className="text-lg font-semibold">Library Chair</h4>
+        <h6 className="font-semibold">$20</h6></Link>
       </div>
   </div>    
 <br/>

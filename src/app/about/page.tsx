@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function About() {
   return (
@@ -29,13 +30,10 @@ export default function About() {
         <a href="/contact">Contact Us</a>
       </li>
       <li className="text-2xl">
-        <a href="/pages">Pages</a>
-      </li>
-      <li className="text-2xl">
         <a href="/product">Product</a>
       </li>
       <li className="text-2xl">
-        <a href="/FAQ">FAQ</a>
+        <a href="/FAQs">FAQs</a>
       </li> 
      <button className="bg-white text-black">
       <Image
@@ -62,7 +60,7 @@ export default function About() {
       <p className="text-xl">ergonomic design, premium materials, and modern</p> <p>aesthetics, we craft chairs that seamlessly blend style</p> 
       <p className="text-xl">with functionality. </p>
       <br/>
-             <button className="bg-cyan-600 w-56 h-14 text-2xl">View Collection</button>
+             <button className="bg-cyan-600 w-56 h-14 text-2xl"><Link href="/product">View Collection</Link></button>
           </div>
     </div>
     <div style={{ flex: 1, padding: "20px" }}>
@@ -89,7 +87,7 @@ export default function About() {
         <h1 className="text-xl">Next Day as Standard</h1>
         <p className="text-lg">Order before 3pm and get</p>
         <p className="text-lg">you order the next day as</p>
-        <p className="text-lg">Standard</p>
+        <p className="text-lg">Standard</p>''
       </div>
       <div style={{ flex: 1, backgroundColor: "lightgray", padding: "20px" }}>
       <Image

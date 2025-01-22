@@ -1,6 +1,7 @@
 import Image from "next/image";
+import Link from "next/link";
 
-export default function Pages() {
+export default function Page5() {
   return (
     <div className="bg-white w-auto h-full text-black text-bold">
         <div className=" bg-slate-400 h-10 w-auto text-lg">
@@ -28,13 +29,10 @@ export default function Pages() {
         <a href="/contact">Contact Us</a>
       </li>
       <li className="text-2xl">
-        <a href="/pages">Pages</a>
-      </li>
-      <li className="text-2xl">
         <a href="/product">Product</a>
       </li>
       <li className="text-2xl">
-        <a href="/FAQ">FAQ</a>
+        <a href="/FAQs">FAQs</a>
       </li>
       
      <button className="bg-white text-black">
@@ -53,24 +51,26 @@ export default function Pages() {
       <div className="bg-white w-full h-full">
     <div style={{ display: "flex", gap: "20px", flexDirection: "row" }}>
     <div style={{ flex: 1, padding: "20px" }}>
-      <Image
-        src="/Images/chair3.jpeg"
-        alt="Chair3"
-        width={450}
-        height={4}
-       />
+            <Image
+                    src="/Images/chair5.png"
+                    alt="Chair12"
+                    width={320}
+                    height={320}
+                    />
     </div>
     <div style={{ flex: 1, padding: "20px" }}>
       <div className="text-2xl">
-     <h1 className="text-6xl font-bold">Library Stool</h1>
-     <h1 className="text-6xl font-bold">Chair</h1>
+     <h1 className="text-6xl font-bold">Library Chair</h1>
       <br/>
-      <button className="bg-cyan-700 text-white w-36 h-10">$20.00 USD</button>
+      <div className="bg-cyan-700 text-white w-36 h-10">$20.00 USD</div>
+      <br/>
+      <h5 className="font-semibold">Stock Staus:</h5>
+      <p>In Stock</p>
       <br/>
       <br/>
-      <p className="text-zinc-500">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> 
-      <p className="text-zinc-500">Nullam tincidunt erat enim. Lorem ipsum dolor</p>
-      <p className="text-zinc-500">sit amet, consectetur adipiscing</p>
+      <p className="text-zinc-500">Made with premium, eco-friendly materials |</p> 
+      <p className="text-zinc-500">In Affordable Price | Light Weight | Available in different colors |</p>
+      <p className="text-zinc-500">Order now</p>
       <br/>
       <button className="bg-cyan-700 w-32 h-14">
       <Image
@@ -97,51 +97,51 @@ export default function Pages() {
         <Image
         src="/Images/chair4.jpeg"
         alt="Chair4"
-        width={350}
+        width={120}
         height={3}
-        />
-        <h4 className="text-lg font-semibold">Library Stool Chair</h4>
-        <h6 className="font-semibold">$99</h6>
+        /><Link href="/page7">
+        <h4 className="text-lg font-semibold">Elegant chair</h4>
+        <h6 className="font-semibold">$20</h6></Link>
     </div>
     <div style={{ flex: 1, padding: "20px" }}>
         <Image
         src="/Images/Image3.1.jpeg"
         alt="Chair9"
-        width={550}
+        width={200}
         height={3}
-        />
-        <h4 className="text-lg font-semibold">Library Stool Chair</h4>
-        <h6 className="font-semibold">$99</h6>
+        /><Link href="/page1">
+        <h4 className="text-lg font-semibold"> Vintage-Styled chair </h4>
+        <h6 className="font-semibold">$20</h6></Link>
     </div>
     <div style={{ flex: 1, padding: "20px" }}>
-        <Image
-        src="/Images/chair5.png"
-        alt="Chair5"
-        width={350}
-        height={3}
-        />
-        <h4 className="text-lg font-semibold">Library Stool Chair</h4>
-        <h6 className="font-semibold">$99</h6>
-    </div>
-    <div style={{ flex: 1, padding: "20px" }}>
-        <Image
+    <Image
         src="/Images/chair1.jpeg"
         alt="Chair1"
-        width={450}
-        height={3}
-        />
-        <h4 className="text-lg font-semibold">Library Stool Chair</h4>
-        <h6 className="font-semibold">$99</h6>
+        width={200}
+        height={200}
+        /><Link href="/page3">
+        <h4 className="text-lg font-semibold">Plastic Chair</h4>
+        <h6 className="font-semibold">$20</h6></Link>
+    </div>
+    <div style={{ flex: 1, padding: "20px" }}>
+                <Image
+                src="/Images/chair6.jpeg"
+                alt="Chair"
+                width={150}
+                height={150}
+                /><Link href="/page4">
+                <h4 className="text-lg font-semibold">Elegant Sofa</h4>
+                <h6 className="font-semibold">$20</h6></Link>
     </div>
     <div style={{ flex: 1, padding: "20px" }}>
         <Image
-        src="/Images/chair2.jpeg"
+        src="/Images/image5.2.jpeg"
         alt="Chair2"
-        width={350}
-        height={3}
-        />
-        <h4 className="text-lg font-semibold">Library Stool Chair</h4>
-        <h6 className="font-semibold">$99</h6>
+        width={150}
+        height={2}
+        /><Link href="/page8">
+        <h4 className="text-lg font-semibold">Modern Black Accent Chair</h4>
+        <h6 className="font-semibold">$20</h6></Link>
     </div>
     </div>
     <footer className="bg-slate-100 text-black">

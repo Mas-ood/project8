@@ -1,8 +1,8 @@
 import Image from "next/image";
+import Link from "next/link";
 
-export default function Cart() {
+export default function Page7() {
   return (
-    <div className="bg-white">
     <div className="bg-white w-auto h-full text-black text-bold">
         <div className=" bg-slate-400 h-10 w-auto text-lg">
         <div>
@@ -34,7 +34,7 @@ export default function Cart() {
       <li className="text-2xl">
         <a href="/FAQs">FAQs</a>
       </li>
-     
+      
      <button className="bg-white text-black">
       <Image
       
@@ -48,12 +48,103 @@ export default function Cart() {
      </ul>         </header>
         </div>
       </div>
-     </div>
-       
-       
-       <br/>
-       
-       <footer className="bg-slate-100 text-black">
+      <div className="bg-white w-full h-full">
+    <div style={{ display: "flex", gap: "20px", flexDirection: "row" }}>
+    <div style={{ flex: 1, padding: "20px" }}>
+           <Image
+                  src="/Images/chair4.jpeg"
+                  alt="Chair4"
+                  width={300}
+                  height={300}
+                  />
+    </div>
+    <div style={{ flex: 1, padding: "20px" }}>
+      <div className="text-2xl">
+     <h1 className="text-6xl font-bold">Elegant Chair</h1>
+      <br/>
+      <div className="bg-cyan-700 text-white w-36 h-10">$20.00 USD</div>
+      <br/>
+      <h5 className="font-semibold">Stock Staus:</h5>
+      <p>In Stock</p>
+      <br/>
+      <br/>
+      <p className="text-zinc-500">Made with premium, eco-friendly materials |</p> 
+      <p className="text-zinc-500">In Affordable Price | Light Weight | Available in different colors |</p>
+      <p className="text-zinc-500">Order now</p>
+      <br/>
+      <button className="bg-cyan-700 w-32 h-14">
+      <Image
+      
+      src="/Images/cart.png"
+      alt="Cart" 
+      width={20}
+      height={1}
+      /><p className="text-white font-semibold text-lg">Add to Cart</p>
+          </button>
+          </div>
+    </div>
+    </div>
+    </div>
+    <br/>
+    <br/>
+    <div>
+      <h1 className="text-4xl font-bold text-center">Featured Products</h1>
+      <h3 className="text-slate-500 text-right text-xl"><a href="/product">View All.</a></h3>
+    </div>
+    <br/>      
+      <div style={{ display: "flex", gap: "10px", flexDirection: "row" }}>
+      <div style={{ flex: 1, padding: "20px" }}>
+        <Image
+        src="/Images/chair3.jpeg"
+        alt="Chair3"
+        width={150}
+        height={3}
+        /><Link href="/page2">
+        <h4 className="text-lg font-semibold">Beautiful Sofa</h4>
+        <h6 className="font-semibold">$20</h6></Link>
+    </div>
+    <div style={{ flex: 1, padding: "20px" }}>
+        <Image
+        src="/Images/Image3.1.jpeg"
+        alt="Chair9"
+        width={200}
+        height={3}
+        /><Link href="/page1">
+        <h4 className="text-lg font-semibold"> Vintage-Styled chair </h4>
+        <h6 className="font-semibold">$20</h6></Link>
+    </div>
+    <div style={{ flex: 1, padding: "20px" }}>
+        <Image
+        src="/Images/chair5.png"
+        alt="Chair5"
+        width={130}
+        height={3}
+        /><Link href="/page12">
+        <h4 className="text-lg font-semibold">Library chair</h4>
+        <h6 className="font-semibold">$20</h6></Link>
+    </div>
+    <div style={{ flex: 1, padding: "20px" }}>
+                <Image
+                src="/Images/chair6.jpeg"
+                alt="Chair"
+                width={150}
+                height={150}
+                /><Link href="/page4">
+                <h4 className="text-lg font-semibold">Elegant Sofa</h4>
+                <h6 className="font-semibold">$20</h6></Link>
+    </div>
+    <div style={{ flex: 1, padding: "20px" }}>
+        <Image
+        src="/Images/chair2.jpeg"
+        alt="Chair2"
+        width={100}
+        height={2}
+        /><Link href="/page9">
+        <h4 className="text-lg font-semibold">Luxury chair</h4>
+        <h6 className="font-semibold">$20</h6></Link>
+    </div>
+    </div>
+    <footer className="bg-slate-100 text-black">
    <br/>
    <div style={{ display: "flex", gap: "20px", flexDirection: "row" }}>
    <div style={{ flex: 1, padding: "20px" }}>
@@ -156,6 +247,5 @@ export default function Cart() {
 </div>
     </footer>
       </div>
-      
 );
 }

@@ -1,4 +1,6 @@
 import Image from "next/image";
+import Link from "next/link";
+import React from "react";
 
 export default function Home() {
   return (
@@ -29,13 +31,10 @@ export default function Home() {
         <a href="/contact">Contact Us</a>
       </li>
       <li className="text-2xl">
-        <a href="/pages">Pages</a>
-      </li>
-      <li className="text-2xl">
         <a href="/product">Product</a>
       </li>
       <li className="text-2xl">
-        <a href="/FAQ">FAQ</a>
+        <a href="/FAQs">FAQs</a>
       </li>
      <button className="bg-white text-black">
       <Image
@@ -71,7 +70,7 @@ export default function Home() {
         <br/>
         <br/>
       
-        <button className="text-white w-[217px] h-[66px] p-4 bg-cyan-700"><b>Shop Now</b> </button>
+        <button className="text-white w-[217px] h-[66px] p-4 bg-cyan-700"><Link href="/product"><b>Shop Now</b></Link> </button>
         </div>
         <div className="flex-1">
           <div>
@@ -154,212 +153,51 @@ export default function Home() {
   alt="Chair9"
   width={300}
   height={300}
-  />
-  <p className="font-medium">Library Stool Chair</p>
-  <p className="font-semibold">$20</p>
+  /><Link href="/page1">
+  <p className="font-medium">Vintage-Styled Chair
+  </p>
+  <p className="font-semibold">$20</p></Link>
 </div>  
 <div style={{ flex: 1, padding: "20px" }}>
   <Image
   src="/Images/chair3.jpeg"
   alt="Chair3"
-  width={200}
-  height={200}
-  />
-  <p className="font-medium">Library Stool Chair</p>
-  <p className="font-semibold">$20</p>
+  width={190}
+  height={190}
+  /><Link href="/page2">
+  <p className="font-medium">Beautiful Chair</p>
+  <p className="font-semibold">$20</p></Link>
 </div>  
 <div style={{ flex: 1, padding: "20px" }}>
   <Image
   src="/Images/chair1.jpeg"
   alt="Chair1"
-  width={300}
-  height={300}
-  />
-  <p className="font-medium">Library Stool Chair</p>
-  <p className="font-semibold">$20</p>
+  width={240}
+  height={240}
+  /><Link href="/page3">
+  <p className="font-medium">Platsic Chair</p>
+  <p className="font-semibold">$20</p></Link>
 </div>  
 <div style={{ flex: 1, padding: "20px" }}>
   <Image
   src="/Images/chair6.jpeg"
   alt="Chair6"
-  width={200}
-  height={200}
-  />
-  <p className="font-medium">Library Stool Chair</p>
-  <p className="font-semibold">$20</p>
-</div>  
+  width={180}
+  height={180}
+  /><Link href="/page4">
+  <p className="font-medium">Elegant Sofa</p>
+  <p className="font-semibold">$20</p></Link>
+</div>
  </div>
  </div>
+ <div className="text-center font-semibold text-slate-600">
+  <button><Link href="/product">View All</Link></button>
+  </div>
     </div>
     <br/>
     <div>
-    <h1 className="text-2xl font-bold text-center">Featured Products</h1>
-     <br/>
-     <div style={{ display: "flex", gap: "30px", flexDirection: "row" }}>
-<div style={{ flex: 1, padding: "20px" }}>
-  <Image
-  src="/Images/chair2.jpeg"
-  alt="Chair2"
-  width={200}
-  height={200}
-  /><br/>
-  <p className="font-semibold text-lg">Wing Chair</p>
-     </div>
-     <div style={{ flex: 1, padding: "20px" }}>
-  <Image
-  src="/Images/chair7.jpeg"
-  alt="Chair7"
-  width={300}
-  height={300}
-  /><br/>
-  <p className="font-semibold text-lg">Wooden Chair</p>
-     </div>
-     <div style={{ flex: 1, padding: "20px" }}>
-  <Image
-  src="/Images/chair5.png"
-  alt="Chair5"
-  width={220}
-  height={200}
-  /><br/>
-  <p className="font-semibold text-lg">Desk Chair</p>
-     </div>
-    </div>
-    <br/>
-    <div>
-      <h1 className="text-center font-bold text-3xl">Explore New And Popluar Styles</h1>
-      </div>
-    <br/>
-    <div style={{ display: "flex", gap: "20px", flexDirection: "row" }}>
-<div style={{ flex: 1, padding: "20px" }}>
-  <Image
-  src="/Images/chair1.jpeg"
-  alt="Chair1"
-  width={300}
-  height={300}
-  /><br/>
-  </div>
-  <div style={{ flex: 1, padding: "20px" }}>
-  <Image
-  src="/Images/chair6.jpeg"
-  alt="Chair6"
-  width={230}
-  height={220}
-  /><br/>
-  </div>
-  <div style={{ flex: 1, padding: "20px" }}>
-  <Image
-  src="/Images/Image3.1.jpeg"
-  alt="Chair9"
-  width={330}
-  height={330}
-  /><br/>
-  </div>
-  <div style={{ flex: 1, padding: "20px" }}>
-  <Image
-  src="/Images/chair8.jpeg"
-  alt="Chair8"
-  width={200}
-  height={200}
-  /><br/>
-  </div>
-  <div style={{ flex: 1, padding: "20px" }}>
-  <Image
-  src="/Images/Image3.1.jpeg"
-  alt="Chair9"
-  width={300}
-  height={300}
-  /><br/>
-  </div>
-  </div>
-  <br/>
-  <div className="text-center font-bold text-3xl"><h1>Our Products</h1></div>
-  <br/>
-  <div style={{ display: "flex", gap: "20px", flexDirection: "row" }}>
-<div style={{ flex: 1, padding: "20px" }}>
-<Image
-  src="/Images/Image3.1.jpeg"
-  alt="Chair9"
-  width={300}
-  height={300}
-  />
-  <p>Library Stool Chair</p>
-  <p className="font-semibold text-lg">$20</p>
-  </div>
-  <div style={{ flex: 1, padding: "20px" }}>
-<Image
-  src="/Images/chair3.jpeg"
-  alt="Chair3"
-  width={220}
-  height={220}
-  />
-  <p>Library Stool Chair</p>
-  <p className="font-semibold text-lg">$20</p>
-  </div>
-  <div style={{ flex: 1, padding: "20px" }}>
-<Image
-  src="/Images/chair1.jpeg"
-  alt="Chair1"
-  width={280}
-  height={280}
-  />
-  <p>Library Stool Chair</p>
-  <p className="font-semibold text-lg">$20</p>
-  </div>
-  <div style={{ flex: 1, padding: "20px" }}>
-<Image
-  src="/Images/chair6.jpeg"
-  alt="Chair6"
-  width={200}
-  height={200}
-  />
-  <p>Library Stool Chair</p>
-  <p className="font-semibold text-lg">$20</p>
-  </div>
 </div>
-<div style={{ display: "flex", gap: "20px", flexDirection: "row" }}>
-<div style={{ flex: 1, padding: "20px" }}>
-<Image
-  src="/Images/chair2.jpeg"
-  alt="Chair2"
-  width={200}
-  height={200}
-  /><br/>
-  <p>Library Stool Chair</p>
-  <p className="font-semibold text-lg">$20</p>
-  </div>
-  <div style={{ flex: 1, padding: "20px" }}>
-<Image
-  src="/Images/chair8.jpeg"
-  alt="Chair8"
-  width={220}
-  height={220}
-  /><br/>
-  <p>Library Stool Chair</p>
-  <p className="font-semibold text-lg">$20</p>
-  </div>
-  <div style={{ flex: 1, padding: "20px" }}>
-<Image
-  src="/Images/chair4.jpeg"
-  alt="Chair4"
-  width={200}
-  height={200}
-  /><br/>
-  <p>Library Stool Chair</p>
-  <p className="font-semibold text-lg">$20</p>
-  </div>
-  <div style={{ flex: 1, padding: "20px" }}>
-<Image
-  src="/Images/Image3.1.jpeg"
-  alt="Chair9"
-  width={300}
-  height={400}
-  /><br/>
-  <p>Library Stool Chair</p>
-  <p className="font-semibold text-lg">$20</p>
-  </div>
 </div>
-  </div>
-  </div>
   <div>
   <footer className="bg-slate-100 text-black">
    <br/>
